@@ -29,11 +29,11 @@ function App() {
       
       <div className='form'>
 
-        <button onClick={DecreMent} style={{width:"50px",height:"60px"}}>-</button>
+        <button onClick={DecreMent} style={{width:"50px",height:"60px",fontSize:"50px"}}>-</button>
         <input type={'number'} value={count} 
-        style={{textAlign:"center",width:"50px",height:"54px"}} 
+        style={{textAlign:"center",width:"85px",height:"54px",fontSize:"50px"}} 
         onChange={(e)=>handleChange(e)}/>
-        <button onClick={IncreMent} style={{width:"50px",height:"60px"}}>+</button>
+        <button onClick={IncreMent} style={{width:"50px",height:"60px",fontSize:"50px"}}>+</button>
       </div>
       <div className='van'>Updated Value is:{count}</div>
     </div>
