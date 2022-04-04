@@ -30,8 +30,8 @@ function App() {
       <div className='form'>
 
         <button onClick={DecreMent} style={{width:"50px",height:"60px"}}>-</button>
-        <input type={'number'} value={count} min={-10} max={10} 
-        style={{textAlign:"center",width:"50px",height:"60px"}} 
+        <input type={'number'} value={count} 
+        style={{textAlign:"center",width:"50px",height:"54px"}} 
         onChange={(e)=>handleChange(e)}/>
         <button onClick={IncreMent} style={{width:"50px",height:"60px"}}>+</button>
       </div>
