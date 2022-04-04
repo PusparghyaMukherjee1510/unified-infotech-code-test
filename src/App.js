@@ -31,7 +31,8 @@ function App() {
 
         <button onClick={DecreMent} style={{width:"50px",height:"60px",fontSize:"50px"}}>-</button>
         <input type={'number'} value={count} 
-        style={{textAlign:"center",width:"85px",height:"54px",fontSize:"50px"}} 
+        style={{textAlign:"center",width:"85px",height:"54px",fontSize:"50px"}}
+        min={-10} max={10} 
         onChange={(e)=>handleChange(e)}/>
         <button onClick={IncreMent} style={{width:"50px",height:"60px",fontSize:"50px"}}>+</button>
       </div>
