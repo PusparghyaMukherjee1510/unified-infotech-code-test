@@ -5,14 +5,20 @@ function App() {
   const [count, setCount]=useState(0);
 
   const IncreMent=()=>{
-   
-    setCount (parseInt(count) + 1);
-  }
+    if(count < 10){
+     setCount (count + 1);
+   }else{
+     alert('max value is limited to 10');
+   }
+ }
 
-  const DecreMent=()=>{
-    setCount(parseInt(count)-1);
-    
+ const DecreMent=()=>{
+  if(count > -10){
+  setCount(count-1);
+  }else{
+    alert('min value is limited to -10');
   }
+}
  const handleChange=(e)=>{
    setCount(e.target.value);
    
@@ -22,6 +28,7 @@ function App() {
     <div className="App">
       
       <div className='form'>
+
         <button onClick={DecreMent} style={{width:"50px",height:"60px"}}>-</button>
         <input type={'number'} value={count} min={-10} max={10} 
         style={{textAlign:"center",width:"50px",height:"60px"}} 
